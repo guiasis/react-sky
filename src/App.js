@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.png';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style = {style.back}>
+        <input type = "Text" style = {style.input} placeholder = "Login"></input>
+        <input type = "Text" style = {style.input} placeholder = "Senha"></input>
+      
     </div>
   );
 }
 
+
+let style = {input:{
+display:'flex',
+textAlign:'center',
+margin: '10px',
+padding: '5px'
+},
+back:{
+
+},};
 export default App;
